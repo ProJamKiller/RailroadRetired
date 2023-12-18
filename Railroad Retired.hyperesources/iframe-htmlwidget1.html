@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .widget-container {
+            background-color: transparent;
+            font-family: Arial, sans-serif;
+            color: lightgray;
+            font-size: 12px; /* Reduced font size */
+            padding: 2px; /* Reduced padding */
+            line-height: 1.2; /* Reduced line spacing */
+            overflow: hidden;
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(100%);
+            animation: slideInLeft 1s ease-out forwards;
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <p class="slide-in-left" style="animation-delay: 0s;">Paul Steger</p>
+        <p class="slide-in-left" style="animation-delay: 0.5s;">Agency Owner</p>
+        <p class="slide-in-left" style="animation-delay: 1s;">National Headquarters</p>
+        <p class="slide-in-left" style="animation-delay: 1.5s;">11208 W 106th St</p>
+        <p class="slide-in-left" style="animation-delay: 2s;">Overland Park, Ks 66214</p>
+        <p class="slide-in-left bold" style="animation-delay: 2.5s;">913-306-8500</p>
+    </div>
+</body>
+</html>
