@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .widget-container {
+            background-color: transparent;
+            font-family: Arial, sans-serif;
+            color: lightgray;
+            font-size: 12px;
+            padding: 2px;
+            line-height: 1.6;
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <p class="fade-in-up" style="animation-delay: 0s;">Two decades of railroad consulting specializing in providing total retirement guidance. Versatility unmatched. Renowned speaker featured at local unions, industry conventions, and NARVE meetings.</p>
+        <p class="fade-in-up" style="animation-delay: 0.5s;">Offering custom solutions, complimentary consultations for all railroad workers, retirees, and their families. Quick insights into alternatives to investment risks with no downside participation. Understanding 401(k) requirements turned into lifetime income.</p>
+        <p class="fade-in-up" style="animation-delay: 1s;">Medicare made simple. Simple steps to avoiding probate and ensuring your spouse or beneficiaries are taken care of.</p>
+    </div>
+</body>
+</html>
